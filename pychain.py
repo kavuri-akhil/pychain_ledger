@@ -71,7 +71,6 @@ class Block:
     # @TODO
     # Rename the `data` attribute to `record`, and set the data type to `Record`
     record: Record
-
     creator_id: int
     prev_hash: str = "0"
     timestamp: str = datetime.datetime.utcnow().strftime("%H:%M:%S")
@@ -180,7 +179,7 @@ receiver_value = st.text_input("Enter Receiver Details")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-amount_value = st.text_input("Enter the amount")
+amount_value = st.number_input('Insert a number')
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
