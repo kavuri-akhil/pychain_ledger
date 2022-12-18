@@ -194,7 +194,6 @@ if st.button("Add Block"):
         sender = sender_value,
         receiver = receiver_value,
         amount = amount_value,
-        data=input_data,
         creator_id=42,
         prev_hash=prev_block_hash
     )
